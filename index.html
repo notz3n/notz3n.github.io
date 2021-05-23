@@ -4,35 +4,12 @@
 <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
 <script src="https://unpkg.com/jquery.terminal/js/jquery.terminal.min.js"></script>
 <link rel="stylesheet" href="https://unpkg.com/jquery.terminal/css/jquery.terminal.min.css"/>
-// check the list of fonts at https://unpkg.com/browse/figlet@1.4.0/fonts/
-// the list can also be seen on demo of Figlet library:
-// http://patorjk.com/software/taag/#p=display&f=Standard&t=jQuery%20Terminal
-<script>
-figlet.defaults({fontPath: 'https://unpkg.com/figlet@1.4.0/fonts/'});
-figlet.preloadFonts(["Standard", "Slant"], ready);
-
-var term;
-
-function ready() {
-    term = $('body').terminal(function(cmd) {
-        // echo function will run it in each render,
-        // so text can be resized based on cols
-        this.echo(() => render(cmd));
-    }, {
-        greetings: function() {
-            return render('test', 'Slant') +
-                `\n[[;rgba(255,255,255,0.99);]test2 ${$.terminal.version}]. test3..\n`;
-        }
-    });
-}
-
-function render(text, font) {
-    return figlet.textSync(text, {
-        font: font || 'Standard',
-        width: !term ? 80 : term.cols(),
-        whitespaceBreak: true
-    });
-}</script>
+  _                                  
+ (_)___ ___  __ _   __ _  __ _ _   _ 
+ | / __/ __|/ _` | / _` |/ _` | | | |
+ | \__ \__ \ (_| || (_| | (_| | |_| |
+ |_|___/___/\__,_(_)__, |\__,_|\__, |
+                   |___/       |___/ 
 </head>
 <body>
 </body>
