@@ -1,39 +1,14 @@
-<!DOCTYPE html>
-<html>
-<head>
-<script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.terminal/2.24.0/js/jquery.terminal.min.js"></script>
-<link href="https://cdnjs.cloudflare.com/ajax/libs/jquery.terminal/2.24.0/css/jquery.terminal.min.css" rel="stylesheet"/>
-</head>
-<body>
-    
-    <script>
-        jQuery(function($, undefined) {
-    $('#term_demo').terminal(function(command) {
-        if (command !== '') {
-            var result = window.eval(command);
-            if (result != undefined) {
-                this.echo(String(result));
-            }
-        }
-    }, {
-        greetings: 'Javascript Interpreter',
-        name: 'js_demo',
-        height: 200,
-        width: 450,
-        prompt: 'js> '
-    });
-        });</script>
-
-<script>
-$('body').terminal({
-    hello: function(what) {
-        this.echo('about/' + what \r\n + 'this is a test');
-    }
-}, {
-    greetings: 'what fucking greetings'
-});
-</script>
-
-</body>
+<html> 
+  <head> 
+    <title>CodeNerve</title> 
+    <script type="text/javascript"  src="https://ajax.googleapis.com/ajax/libs/jquery/1.4.2/jquery.min.js"></script> 
+    <link rel="stylesheet" type="text/css" href="index.css">
+  </head> 
+  <body> 
+    <script type="text/javascript" src="index.js"> 
+    </script> 
+    <div id="console"></div> 
+    <script type="text/javascript", src="index2.js">
+    </script>
+  </body> 
 </html>
