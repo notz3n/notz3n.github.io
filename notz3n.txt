@@ -17,4 +17,4 @@ Want to buy this domain?<!-- 12345678901234567890 -->, feel free to send me an e
 <p>-notz3n</p><!-- 123456789012345678901234567890123456789012345678901234567890 -->
 
 
-<br><br><br><br><br><br><br><br>Many thanks to <a href="https://github.com/CodeNerve">CodeNerve</a> for the layout!</a><br><br><!-- 12345678901234567890 -->
+<br><br><br><br><br><br><br><br><!-- got the layout from https://github.com/CodeNerve --><!-- 12345678901234567890 -->
