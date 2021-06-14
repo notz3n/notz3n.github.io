@@ -107,4 +107,3 @@ function t() {
     clearInterval(timer);
   }
 }
-
